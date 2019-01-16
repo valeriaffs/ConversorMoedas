@@ -8,38 +8,49 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_em_real"/>
+        android:text= "@string/valor_em_real"
+        android:layout_gravity="center"
+        android:textSize="25sp"/>
 
     <EditText
         android:id="@+id/edit_value"
-        android:layout_width="match_parent"
+        android:layout_width="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
         android:layout_height="wrap_content"
-        android:hint="@string/valor"/>
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:inputType="numberSigned"/>
 
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="@string/valor_em_dollar"/>
 
     <TextView
         android:id="@+id/text_dollar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/valor_em_dollar"/>
+        android:textSize="25sp"
+        android:paddingTop="10dp"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="@string/valor_em_euro"/>
 
     <TextView
         android:id="@+id/text_euro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/valor_em_euro"/>
+        android:paddingTop="10dp"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/button_calculate"
